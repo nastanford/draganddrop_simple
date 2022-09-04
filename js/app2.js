@@ -32,6 +32,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
   function handleDrop(e) {
     if (e.stopPropagation) {
       e.stopPropagation(); // stops the browser from redirecting.
+      // drag drop update database item dropped
+      var data = e.dataTransfer.getData("text/html");
+      var id = dragSrcEl.id;
+      var id2 = this.id;
+      console.log(id, id2);
+
+      // var data = e.dataTransfer.getData("text/html");
+      // var id = dragSrcEl.id;
+      // var id2 = this.id;
+      // var url = "http://localhost:3000/update";
+      // var data = {id: id, id2: id2};
+      // var xhr = new XMLHttpRequest();
+      // xhr.open("POST", url, true);
+      // xhr.setRequestHeader("Content-Type", "application/json");
+      // xhr.onreadystatechange = function () {
+      //   if (xhr.readyState === 4 && xhr.status === 200) {
+      //     var json = JSON.parse(xhr.responseText);
+      //     console.log(json);
+      //   }
+      // }
+
+
+
     }
     
     if (dragSrcEl != this) {
