@@ -28,15 +28,15 @@
     $results = $stmt->fetchAll();
 
     $resultsCount=count($results);
-    for($i=0;$i<$resultsCount;$i++)
-    {
-      echo "<div class=container>";
-      echo "<div id=".$results[$i]['orderby']."draggable=true class=box>";
-      echo $results[$i]['orderby']."&nbsp;&nbsp;&nbsp;&nbsp;";  
-      echo $results[$i]['item'];
-      echo "</div>";
-    }
-  ?>
-
+    echo "\n<div class=container>\n";
+      for($i=0;$i<$resultsCount;$i++)
+      {
+        echo "\t<div id=".$results[$i]['id']." draggable=true class=box>";
+        echo $results[$i]['item'];
+        echo "</div>\n";
+      }
+    echo "</div>";
+    ?>
+  <script src="js/app3.js"></script>
 </body>
 </html>

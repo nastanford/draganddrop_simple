@@ -8,9 +8,7 @@
   <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
-
 <?php include 'navbar.php'; ?>
-
 <div class="container">
   <div id="1" draggable="true" class="box">A</div><br>
   <div id="2" draggable="true" class="box">B</div><br>
@@ -19,7 +17,6 @@
   <div id="5" draggable="true" class="box">E</div><br>
   <div id="6" draggable="true" class="box">F</div><br>
 </div>
-
 <script src="js/app2.js"></script>
 </body>
 </html>
