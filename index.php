@@ -14,7 +14,6 @@ function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
-  alert("You have dropped - ".concat(data));
 }
 </script>
 </head>
@@ -29,11 +28,7 @@ function drop(ev) {
 
 </style>
 <body>
-<a href="index.html">Home</a> |
-<a href="example1.html">Example 1</a> | 
-<a href="example2.html">Example 2</a>
-<hr>
-
+<?php include 'navbar.php'; ?>
 
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
   <img id="drag1" src="logo.jpg" draggable="true" ondragstart="drag(event)">

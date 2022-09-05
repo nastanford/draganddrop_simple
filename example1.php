@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<a href="index.html">Home</a> |
-<a href="example1.html">Example 1</a> | 
-<a href="example2.html">Example 2</a>
-<hr>
+<?php include 'navbar.php'; ?>
 
     <div class="container">
         <h1>JavaScript - Drag and Drop</h1>
