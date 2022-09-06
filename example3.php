@@ -1,3 +1,4 @@
+<?php include 'config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +10,7 @@
 </head>
 <body>
   <?php include 'navbar.php'; ?>
-
   <?php
-    $DB_CONNECTION = 'sqlsrv';
-    $DB_HOST = '127.0.0.1';
-    $DB_PORT = '1433';
-    $DB_DATABASE = 'draganddrop';
-    $DB_USERNAME = 'root';
-    $DB_PASSWORD = '';    
-
     $dsn = "mysql:host=".$DB_HOST.";dbname=".$DB_DATABASE;
     $pdo = new PDO($dsn, $DB_USERNAME, $DB_PASSWORD);
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
