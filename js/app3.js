@@ -42,15 +42,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (dragSrcEl != this) {
       // get all children of container
       var children = this.parentNode.children;
-      // console.log(id);
-      // console.log(id2);
+      console.log('Start');
+      console.log(id);
+      console.log('End');
+      console.log(id2);
       // delete item from array where id
 
 
       for (var i = 1; i < children.length+1; i++) {
         var mydiv = document.getElementById(i);
         console.log(mydiv);
-        
+
         // console.log(i);
         if (i == id) {
           // remove div with id
